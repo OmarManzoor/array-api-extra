@@ -1,0 +1,6 @@
+﻿setdiff1d
+=========
+
+.. currentmodule:: array_api_extra
+
+.. autofunction:: array_api_extra.setdiff1d

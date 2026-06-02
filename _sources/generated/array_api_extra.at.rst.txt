@@ -1,0 +1,6 @@
+﻿at
+==
+
+.. currentmodule:: array_api_extra
+
+.. autoclass:: array_api_extra.at

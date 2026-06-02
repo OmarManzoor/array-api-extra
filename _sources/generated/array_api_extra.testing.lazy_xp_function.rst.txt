@@ -1,0 +1,6 @@
+﻿testing.lazy\_xp\_function
+==========================
+
+.. currentmodule:: array_api_extra.testing
+
+.. autofunction:: array_api_extra.testing.lazy_xp_function

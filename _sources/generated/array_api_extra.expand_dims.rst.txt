@@ -1,0 +1,6 @@
+﻿expand\_dims
+============
+
+.. currentmodule:: array_api_extra
+
+.. autofunction:: array_api_extra.expand_dims

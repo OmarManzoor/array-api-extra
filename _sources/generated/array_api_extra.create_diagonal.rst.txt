@@ -1,0 +1,6 @@
+﻿create\_diagonal
+================
+
+.. currentmodule:: array_api_extra
+
+.. autofunction:: array_api_extra.create_diagonal

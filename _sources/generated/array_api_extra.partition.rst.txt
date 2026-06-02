@@ -1,0 +1,6 @@
+﻿partition
+=========
+
+.. currentmodule:: array_api_extra
+
+.. autofunction:: array_api_extra.partition

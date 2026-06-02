@@ -1,0 +1,6 @@
+﻿nan\_to\_num
+============
+
+.. currentmodule:: array_api_extra
+
+.. autofunction:: array_api_extra.nan_to_num
