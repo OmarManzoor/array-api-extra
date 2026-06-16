@@ -3,10 +3,10 @@
   <head><meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../genindex.html"><link rel="search" title="Search" href="../search.html"><link rel="next" title="testing.assert_close_nulp" href="array_api_extra.testing.assert_close_nulp.html"><link rel="prev" title="Testing utilities (xpx.testing)" href="../api-testing.html">
+<link rel="index" title="Index" href="../genindex.html"><link rel="search" title="Search" href="../search.html"><link rel="next" title="setdiff1d" href="array_api_extra.setdiff1d.html"><link rel="prev" title="partition" href="array_api_extra.partition.html">
 
     <!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 -->
-        <title>testing.assert_close - array-api-extra 0.11.1.dev0 documentation</title>
+        <title>searchsorted - array-api-extra 0.11.1.dev0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=d111a655" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=7bdb33bb" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -193,7 +193,7 @@
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../index.html">array-api-extra</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../api-assorted.html">Assorted functions</a><input aria-label="Toggle navigation of Assorted functions" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../api-assorted.html">Assorted functions</a><input aria-label="Toggle navigation of Assorted functions" checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="array_api_extra.angle.html">angle</a></li>
 <li class="toctree-l2"><a class="reference internal" href="array_api_extra.apply_where.html">apply_where</a></li>
 <li class="toctree-l2"><a class="reference internal" href="array_api_extra.argpartition.html">argpartition</a></li>
@@ -212,14 +212,14 @@
 <li class="toctree-l2"><a class="reference internal" href="array_api_extra.one_hot.html">one_hot</a></li>
 <li class="toctree-l2"><a class="reference internal" href="array_api_extra.pad.html">pad</a></li>
 <li class="toctree-l2"><a class="reference internal" href="array_api_extra.partition.html">partition</a></li>
-<li class="toctree-l2"><a class="reference internal" href="array_api_extra.searchsorted.html">searchsorted</a></li>
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">searchsorted</a></li>
 <li class="toctree-l2"><a class="reference internal" href="array_api_extra.setdiff1d.html">setdiff1d</a></li>
 <li class="toctree-l2"><a class="reference internal" href="array_api_extra.sinc.html">sinc</a></li>
 <li class="toctree-l2"><a class="reference internal" href="array_api_extra.union1d.html">union1d</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current has-children"><a class="reference internal" href="../api-testing.html">Testing utilities (<code class="docutils literal notranslate"><span class="pre">xpx.testing</span></code>)</a><input aria-label="Toggle navigation of Testing utilities (xpx.testing)" checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
-<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">testing.assert_close</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../api-testing.html">Testing utilities (<code class="docutils literal notranslate"><span class="pre">xpx.testing</span></code>)</a><input aria-label="Toggle navigation of Testing utilities (xpx.testing)" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="array_api_extra.testing.assert_close.html">testing.assert_close</a></li>
 <li class="toctree-l2"><a class="reference internal" href="array_api_extra.testing.assert_close_nulp.html">testing.assert_close_nulp</a></li>
 <li class="toctree-l2"><a class="reference internal" href="array_api_extra.testing.assert_equal.html">testing.assert_equal</a></li>
 <li class="toctree-l2"><a class="reference internal" href="array_api_extra.testing.assert_less.html">testing.assert_less</a></li>
@@ -253,12 +253,12 @@
         </a>
         <div class="content-icon-container">
           <div class="view-this-page">
-  <a class="muted-link" href="https://github.com/data-apis/array-api-extra/blob/main/docs/generated/array_api_extra.testing.assert_close.rst?plain=true" title="View this page">
+  <a class="muted-link" href="https://github.com/data-apis/array-api-extra/blob/main/docs/generated/array_api_extra.searchsorted.rst?plain=true" title="View this page">
     <svg><use href="#svg-eye"></use></svg>
     <span class="visually-hidden">View this page</span>
   </a>
 </div><div class="edit-this-page">
-  <a class="muted-link" href="https://github.com/data-apis/array-api-extra/edit/main/docs/generated/array_api_extra.testing.assert_close.rst" rel="edit" title="Edit this page">
+  <a class="muted-link" href="https://github.com/data-apis/array-api-extra/edit/main/docs/generated/array_api_extra.searchsorted.rst" rel="edit" title="Edit this page">
     <svg><use href="#svg-pencil"></use></svg>
     <span class="visually-hidden">Edit this page</span>
   </a>
@@ -275,65 +275,59 @@
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          <section id="testing-assert-close">
-<h1>testing.assert_close<a class="headerlink" href="#testing-assert-close" title="Link to this heading">¶</a></h1>
+          <section id="searchsorted">
+<h1>searchsorted<a class="headerlink" href="#searchsorted" title="Link to this heading">¶</a></h1>
 <dl class="py function">
-<dt class="sig sig-object py" id="array_api_extra.testing.assert_close">
-<span class="sig-prename descclassname"><span class="pre">array_api_extra.testing.</span></span><span class="sig-name descname"><span class="pre">assert_close</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">actual</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">desired</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">rtol</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atol</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">equal_nan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">err_msg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">check_dtype</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">check_shape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">check_scalar</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#array_api_extra.testing.assert_close" title="Link to this definition">¶</a></dt>
-<dd><p>Check that two arrays are close, up to tolerance <code class="docutils literal notranslate"><span class="pre">atol</span> <span class="pre">+</span> <span class="pre">rtol</span> <span class="pre">*</span> <span class="pre">abs(desired)</span></code>.</p>
-<p>This is an interface to <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.testing.assert_allclose.html#numpy.testing.assert_allclose" title="(in NumPy v2.4)"><code class="xref py py-func docutils literal notranslate"><span class="pre">numpy.testing.assert_allclose()</span></code></a> which accepts
-any standard-compatible array and performs additional array namespace,
-shape, and dtype checks.</p>
+<dt class="sig sig-object py" id="array_api_extra.searchsorted">
+<span class="sig-prename descclassname"><span class="pre">array_api_extra.</span></span><span class="sig-name descname"><span class="pre">searchsorted</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x2</span></span></em>, <em class="sig-param"><span class="positional-only-separator o"><abbr title="Positional-only parameter separator (PEP 570)"><span class="pre">/</span></abbr></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">side</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'left'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#array_api_extra.searchsorted" title="Link to this definition">¶</a></dt>
+<dd><p>Find indices where elements should be inserted to maintain order.</p>
+<p>Find the indices into a sorted array <code class="docutils literal notranslate"><span class="pre">x1</span></code> such that if the elements in <code class="docutils literal notranslate"><span class="pre">x2</span></code>
+were inserted before the indices, the resulting array would remain sorted.</p>
+<p>The behavior of this function is similar to that of <a class="reference external" href="https://data-apis.org/array-api/draft/API_specification/generated/array_api.searchsorted.html#array_api.searchsorted" title="(in Python array API standard)"><code class="xref py py-func docutils literal notranslate"><span class="pre">array_api.searchsorted()</span></code></a>,
+but it relaxes the requirement that <cite>x1</cite> must be one-dimensional.
+This function is vectorized, treating slices along the last axis
+as elements and preceding axes as batch (or “loop”) dimensions.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>actual</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></span>) – The array produced by the tested function.</p></li>
-<li><p><strong>desired</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></span>) – The expected array (typically hardcoded).</p></li>
-<li><p><strong>rtol</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a> | <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a> | <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></span>) – Relative tolerance. Default: dtype-dependent.</p></li>
-<li><p><strong>atol</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a> | <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></span>) – Absolute tolerance. Default: 0.</p></li>
-<li><p><strong>equal_nan</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a></span>) – Whether to consider NaNs in corresponding locations as equal.</p></li>
-<li><p><strong>err_msg</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a></span>) – Error message to display on failure.</p></li>
-<li><p><strong>verbose</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a></span>) – Whether to include the conflicting arrays in the error message on failure.</p></li>
-<li><p><strong>check_dtype</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a></span>) – Whether to check agreement between actual and desired dtypes.</p></li>
-<li><p><strong>check_shape</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a></span>) – Whether to check agreement between actual and desired shapes.</p></li>
-<li><p><strong>check_scalar</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a></span>) – NumPy only: whether to check agreement between actual and desired types —
-0-D <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v2.4)"><code class="xref py py-class docutils literal notranslate"><span class="pre">numpy.ndarray</span></code></a> vs scalar (e.g. <a class="reference external" href="https://numpy.org/doc/stable/reference/arrays.scalars.html#numpy.double" title="(in NumPy v2.4)"><code class="xref py py-class docutils literal notranslate"><span class="pre">numpy.double</span></code></a>).</p></li>
-<li><p><strong>xp</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference external" href="https://docs.python.org/3/library/types.html#types.ModuleType" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ModuleType</span></code></a> | <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></span>) – A standard-compatible namespace which <cite>actual</cite> and <cite>desired</cite> must match.</p></li>
+<li><p><strong>x1</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></span>) – Input array. Should have a real-valued data type. Must be sorted in ascending
+order along the last axis.</p></li>
+<li><p><strong>x2</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></span>) – Array containing search values. Should have a real-valued data type. Must have
+the same shape as <code class="docutils literal notranslate"><span class="pre">x1</span></code> except along the last axis.</p></li>
+<li><p><strong>side</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="(in Python v3.14)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[<code class="docutils literal notranslate"><span class="pre">'left'</span></code>, <code class="docutils literal notranslate"><span class="pre">'right'</span></code>]</span>) – Argument controlling which index is returned if an element of <code class="docutils literal notranslate"><span class="pre">x2</span></code> is equal to
+one or more elements of <code class="docutils literal notranslate"><span class="pre">x1</span></code>: <code class="docutils literal notranslate"><span class="pre">'left'</span></code> returns the index of the first of
+these elements; <code class="docutils literal notranslate"><span class="pre">'right'</span></code> returns the next index after the last of these
+elements. Default: <code class="docutils literal notranslate"><span class="pre">'left'</span></code>.</p></li>
+<li><p><strong>xp</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference external" href="https://docs.python.org/3/library/types.html#types.ModuleType" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ModuleType</span></code></a> | <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></span>) – The standard-compatible namespace for the array arguments. Default: infer.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Raises<span class="colon">:</span></dt>
-<dd class="field-even"><ul class="simple">
-<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#AssertionError" title="(in Python v3.14)"><strong>AssertionError</strong></a> – If <cite>actual</cite> and <cite>desired</cite> are not equal up to the defined tolerance.</p></li>
-<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ImportError" title="(in Python v3.14)"><strong>ImportError</strong></a> – If <a class="reference external" href="https://numpy.org/doc/stable/reference/index.html#module-numpy" title="(in NumPy v2.4)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">numpy</span></code></a> is not importable in the Python environment.</p></li>
-</ul>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>Array</strong> – An array of indices with the same shape as <code class="docutils literal notranslate"><span class="pre">x2</span></code>.</p>
 </dd>
-</dl>
-<div class="admonition seealso">
-<p class="admonition-title">See also</p>
-<dl class="simple">
-<dt><a class="reference internal" href="array_api_extra.testing.assert_equal.html#array_api_extra.testing.assert_equal" title="array_api_extra.testing.assert_equal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">assert_equal</span></code></a></dt><dd><p>Similar function for exact equality checks.</p>
-</dd>
-<dt><a class="reference internal" href="array_api_extra.isclose.html#array_api_extra.isclose" title="array_api_extra.isclose"><code class="xref py py-obj docutils literal notranslate"><span class="pre">array_api_extra.isclose</span></code></a></dt><dd><p>Similar function checking closeness, returning a bool.</p>
-</dd>
-<dt><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.testing.assert_allclose.html#numpy.testing.assert_allclose" title="(in NumPy v2.4)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">numpy.testing.assert_allclose</span></code></a></dt><dd><p>Similar function for NumPy arrays.</p>
-</dd>
-</dl>
-</div>
-<dl class="field-list simple">
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></span></p>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></span></p>
 </dd>
 </dl>
-<p class="rubric">Notes</p>
-<p>The default <cite>atol</cite> and <cite>rtol</cite> differ from <code class="docutils literal notranslate"><span class="pre">xp.all(xpx.isclose(a,</span> <span class="pre">b))</span></code>.
-For inexact dtypes, the default <cite>rtol</cite> is
-<code class="docutils literal notranslate"><span class="pre">xp.finfo(actual.dtype).eps</span> <span class="pre">**</span> <span class="pre">0.5</span> <span class="pre">*</span> <span class="pre">4</span></code>, which for <code class="docutils literal notranslate"><span class="pre">float64</span></code> is roughly halfway
-between <span class="math notranslate nohighlight">\(\sqrt{\epsilon}\)</span> and the default for
-<a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.testing.assert_allclose.html#numpy.testing.assert_allclose" title="(in NumPy v2.4)"><code class="xref py py-func docutils literal notranslate"><span class="pre">numpy.testing.assert_allclose()</span></code></a>, <code class="docutils literal notranslate"><span class="pre">1e-7</span></code>.
-This gives a more reasonable default for lower precision dtypes,
-for example approximately <code class="docutils literal notranslate"><span class="pre">1e-3</span></code> for <code class="docutils literal notranslate"><span class="pre">float32</span></code>.
-For exact dtypes, the default <code class="docutils literal notranslate"><span class="pre">1e-7</span></code> is used.</p>
-<p>Array arguments to <cite>atol</cite> and <cite>rtol</cite> must be valid input to <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>.</p>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">array_api_strict</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">xp</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">array_api_extra</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">xpx</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">xp</span><span class="o">.</span><span class="n">asarray</span><span class="p">([</span><span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">15</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">xpx</span><span class="o">.</span><span class="n">searchsorted</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">xp</span><span class="o">.</span><span class="n">asarray</span><span class="p">([</span><span class="mi">10</span><span class="p">,</span> <span class="mf">11.5</span><span class="p">,</span> <span class="mf">14.5</span><span class="p">,</span> <span class="mi">16</span><span class="p">]),</span> <span class="n">xp</span><span class="o">=</span><span class="n">xp</span><span class="p">)</span>
+<span class="go">Array([0, 1, 5, 6], dtype=array_api_strict.int64)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">xpx</span><span class="o">.</span><span class="n">searchsorted</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">xp</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="mi">13</span><span class="p">),</span> <span class="n">xp</span><span class="o">=</span><span class="n">xp</span><span class="p">)</span>
+<span class="go">Array(2, dtype=array_api_strict.int64)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">xpx</span><span class="o">.</span><span class="n">searchsorted</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">xp</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="mi">13</span><span class="p">),</span> <span class="n">side</span><span class="o">=</span><span class="s1">&#39;right&#39;</span><span class="p">,</span> <span class="n">xp</span><span class="o">=</span><span class="n">xp</span><span class="p">)</span>
+<span class="go">Array(4, dtype=array_api_strict.int64)</span>
+</pre></div>
+</div>
+<p><cite>searchsorted</cite> is vectorized along the last axis.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">x1</span> <span class="o">=</span> <span class="n">xp</span><span class="o">.</span><span class="n">asarray</span><span class="p">([[</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">2.</span><span class="p">,</span> <span class="mf">3.</span><span class="p">,</span> <span class="mf">4.</span><span class="p">],</span> <span class="p">[</span><span class="mf">5.</span><span class="p">,</span> <span class="mf">6.</span><span class="p">,</span> <span class="mf">7.</span><span class="p">,</span> <span class="mf">8.</span><span class="p">]])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x2</span> <span class="o">=</span> <span class="n">xp</span><span class="o">.</span><span class="n">asarray</span><span class="p">([[</span><span class="mf">1.1</span><span class="p">,</span> <span class="mf">3.3</span><span class="p">],</span> <span class="p">[</span><span class="mf">6.6</span><span class="p">,</span> <span class="mf">8.8</span><span class="p">]])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">xpx</span><span class="o">.</span><span class="n">searchsorted</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">xp</span><span class="o">=</span><span class="n">xp</span><span class="p">)</span>
+<span class="go">Array([[1, 3],</span>
+<span class="go">       [2, 4]], dtype=array_api_strict.int64)</span>
+</pre></div>
+</div>
 </dd></dl>
 
 </section>
@@ -343,23 +337,23 @@ For exact dtypes, the default <code class="docutils literal notranslate"><span c
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="array_api_extra.testing.assert_close_nulp.html">
+          <a class="next-page" href="array_api_extra.setdiff1d.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">testing.assert_close_nulp</div>
+                <div class="title">setdiff1d</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="../api-testing.html">
+          <a class="prev-page" href="array_api_extra.partition.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">Testing utilities (<code class="docutils literal notranslate"><span class="pre">xpx.testing</span></code>)</div>
+                <div class="title">partition</div>
                 
               </div>
             </a>
@@ -400,8 +394,8 @@ For exact dtypes, the default <code class="docutils literal notranslate"><span c
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">testing.assert_close</a><ul>
-<li><a class="reference internal" href="#array_api_extra.testing.assert_close"><code class="docutils literal notranslate"><span class="pre">assert_close()</span></code></a></li>
+<li><a class="reference internal" href="#">searchsorted</a><ul>
+<li><a class="reference internal" href="#array_api_extra.searchsorted"><code class="docutils literal notranslate"><span class="pre">searchsorted()</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -419,6 +413,5 @@ For exact dtypes, the default <code class="docutils literal notranslate"><span c
     <script src="../_static/scripts/furo.js?v=46bd48cc"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=f281be69"></script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
     </body>
 </html>

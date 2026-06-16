@@ -3,10 +3,10 @@
   <head><meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../genindex.html"><link rel="search" title="Search" href="../search.html"><link rel="next" title="sinc" href="array_api_extra.sinc.html"><link rel="prev" title="partition" href="array_api_extra.partition.html">
+<link rel="index" title="Index" href="../genindex.html"><link rel="search" title="Search" href="../search.html"><link rel="next" title="sinc" href="array_api_extra.sinc.html"><link rel="prev" title="searchsorted" href="array_api_extra.searchsorted.html">
 
     <!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 -->
-        <title>setdiff1d - array-api-extra 0.10.2.dev0 documentation</title>
+        <title>setdiff1d - array-api-extra 0.11.1.dev0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=d111a655" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=7bdb33bb" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -162,7 +162,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../index.html"><div class="brand">array-api-extra 0.10.2.dev0 documentation</div></a>
+      <a href="../index.html"><div class="brand">array-api-extra 0.11.1.dev0 documentation</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -183,7 +183,7 @@
       
       <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
   
-  <span class="sidebar-brand-text">array-api-extra 0.10.2.dev0 documentation</span>
+  <span class="sidebar-brand-text">array-api-extra 0.11.1.dev0 documentation</span>
   
 </a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -212,6 +212,7 @@
 <li class="toctree-l2"><a class="reference internal" href="array_api_extra.one_hot.html">one_hot</a></li>
 <li class="toctree-l2"><a class="reference internal" href="array_api_extra.pad.html">pad</a></li>
 <li class="toctree-l2"><a class="reference internal" href="array_api_extra.partition.html">partition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="array_api_extra.searchsorted.html">searchsorted</a></li>
 <li class="toctree-l2 current current-page"><a class="current reference internal" href="#">setdiff1d</a></li>
 <li class="toctree-l2"><a class="reference internal" href="array_api_extra.sinc.html">sinc</a></li>
 <li class="toctree-l2"><a class="reference internal" href="array_api_extra.union1d.html">union1d</a></li>
@@ -284,11 +285,11 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>x1</strong> (<em>array</em><em> | </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em> | </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)"><em>float</em></a><em> | </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#complex" title="(in Python v3.14)"><em>complex</em></a><em> | </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><em>bool</em></a>) – Input array.</p></li>
-<li><p><strong>x2</strong> (<em>array</em>) – Input comparison array.</p></li>
-<li><p><strong>assume_unique</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><em>bool</em></a>) – If <code class="docutils literal notranslate"><span class="pre">True</span></code>, the input arrays are both assumed to be unique, which
+<li><p><strong>x1</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a> | <a class="reference external" href="https://docs.python.org/3/library/functions.html#complex" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">complex</span></code></a></span>) – Input array.</p></li>
+<li><p><strong>x2</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a> | <a class="reference external" href="https://docs.python.org/3/library/functions.html#complex" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">complex</span></code></a></span>) – Input comparison array.</p></li>
+<li><p><strong>assume_unique</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a></span>) – If <code class="docutils literal notranslate"><span class="pre">True</span></code>, the input arrays are both assumed to be unique, which
 can speed up the calculation. Default is <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></li>
-<li><p><strong>xp</strong> (<em>array_namespace</em><em>, </em><em>optional</em>) – The standard-compatible namespace for <cite>x1</cite> and <cite>x2</cite>. Default: infer.</p></li>
+<li><p><strong>xp</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference external" href="https://docs.python.org/3/library/types.html#types.ModuleType" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ModuleType</span></code></a> | <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></span>) – The standard-compatible namespace for <cite>x1</cite> and <cite>x2</cite>. Default: infer.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -297,7 +298,7 @@ is sorted when <cite>assume_unique</cite> is <code class="docutils literal notra
 if the input is sorted.</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>array</p>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></span></p>
 </dd>
 </dl>
 <p class="rubric">Examples</p>
@@ -329,14 +330,14 @@ if the input is sorted.</p>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="array_api_extra.partition.html">
+          <a class="prev-page" href="array_api_extra.searchsorted.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">partition</div>
+                <div class="title">searchsorted</div>
                 
               </div>
             </a>
@@ -390,7 +391,7 @@ if the input is sorted.</p>
       
     </aside>
   </div>
-</div><script src="../_static/documentation_options.js?v=529e2ce1"></script>
+</div><script src="../_static/documentation_options.js?v=54e43d81"></script>
     <script src="../_static/doctools.js?v=fd6eb6e6"></script>
     <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="../_static/scripts/furo.js?v=46bd48cc"></script>
